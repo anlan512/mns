@@ -1,0 +1,150 @@
+
+                                                      o
+           _                             /\        _  |  _    .      .       /\                            _
+         _|_|_                          /  \/\   o' \,=./ `o    *  (   *    /  \/\                       _|_|_
+         ( O0)                       /`/   /  \     (O o)      *  .  *   /`/   /  \                      (0O )
+=====ooO==(_)==Ooo==============================ooO==(_)==Ooo========================================ooO==(_)==Ooo=======
+
+RELEASED: 2019-06-14
+BY: Andronicus (https://a.ndronic.us/)
+
+WHAT IS THIS?
+-------------
+This is a release of 600 Million unique passwords with different fields containing computed hashes for those passwords.
+
+WHAT ARE THE FIELDS IN THE DATA?
+--------------------------------
+ID, PASSWORD, MD5, SHA1, NTLM, MYSQL, SHA256
+
+WHAT DO I DO WITH THIS?
+-----------------------
+That is up to you, of course.  However, if you have dumped hashes and you want to look them up to find the original
+password, you can look them up in this data.  For folks who want to look up hashes, my suggestion would be to either grep
+through them (very easy but takes a very long time), or load them all up into a database (the loading takes a while, but
+lookups are quick if you know how to optimize your db).  If you're just gonna do one lookup, use grep.  If you're gonna
+do more than about 10, slap 'em into a database.  I have them in MariaDB, and have that database pretty much optimized
+for mega-huge databases (well, mega-huge for me).  They're pipe-delimited, so they're easy to work with.
+
+WHICH DATABASES DID THIS COME FROM?
+-----------------------------------
+The majority of the data came from this breach:
+
+https://medium.com/4iqdelvedeep/1-4-billion-clear-text-credentials-discovered-in-a-single-database-3131d0a1ae14
+
+Other source databases are as follows:
+
+000webhost
+1394store.com
+178
+17media
+7k7k
+8tracks.com
+99fame.com
+aipai.com
+Alancristea
+animoto.com
+armorgames.com
+ashleymadison.com
+Avvo.com
+badoo
+Balancek
+Barbeligh
+BitcoinLixter
+Blankmediagames.com
+bleachforum
+breachcompilation
+burnett
+cfire.mail.ru
+CSGameServs.com
+ddo.com
+Delicious Takoyaki
+disqus
+DLH.net
+dropbox
+dubsmash.com
+edmodo.com
+eharmony
+eighttracks
+estantevirtual.com.br
+evony
+Exploit.in
+eyeem.com
+Fling
+fotolog.com
+Gamerzplanet.net
+game-tuts.com
+Gamevn.com
+gamigo
+gfan
+gmail
+Gpotato.com
+graboid
+have i been pwnd v1
+have I been pwnd v2
+have I been pwnd v3
+have I been pwnd v4
+heroes of newerth
+hiapk.com
+houzz.com
+id-zing-vn
+imesh
+Ixigo.com
+kaixin
+lastfm
+lbsg.net
+lifebear.com
+linkedin
+LotRO.com
+LulzSecDelivers
+matel
+megatron
+minecraft
+mpgh.net
+Muzhiwan.com
+myfitnesspal.com
+myheritage.com
+myspace
+neopets
+nexusmods.com
+Nihonomaru
+Nulledio
+Parapa.mail.ru
+paypal
+r2games
+rambler
+readnovel.com
+redbox
+rockyou word list
+RuneScape2015
+Shadi.com
+shein.com
+Strongholdkingdoms.com
+Subagames.com
+surgeryu.com
+taobao
+taringa
+tgbus.com
+tianya
+twitter
+weheartit.com
+xiaomi
+xsplit
+yahoo
+yahoo voices
+youku
+youporn
+zomato
+zoosk
+
+ _  _                                                                                                               _  _
+/ \/ \                _                                                     _                                      / \/ \
+| || |              _(_)_                        wWWWw   _                _(_)_                       wWWWw   _    | || |
+| || |   @@@@      (_)@(_)   vVVVv    _    @@@@  (___) _(_)_   @@@@      (_)@(_)  vVVVv    _    @@@@  (___) _(_)_  | || |
+| || |  @@()@@ wWWWw (_)\    (___)  _(_)_ @@()@@   Y  (_)@(_) @@()@@ wWWWw (_)\   (___)  _(_)_ @@()@@   Y  (_)@(_) | || |
+| || |   @@@@  (___)    `|/    Y   (_)@(_) @@@@   \|/   (_)\   @@@@  (___)    `|/   Y   (_)@(_) @@@@   \|/   (_)\  | || |
+| || |    /      Y      \|    \|/   /(_)   \|      |/      |    /      Y      \|   \|/   /(_)   \|      |/      |  | || |
+| || | \ |     \ |/      | / \ | / \|/      |/    \|      \|/\ |     \ |/      |  \ | / \|/      |/    \|      \|/ | || |
+| || |  \|//   \\|/// \\\|//\\\|///\|/// \\\|//  \\|//  \\\|//\|//   \\|/// \\\|/\\\|///\|/// \\\|//  \\|//  \\\|//| || |
+=========================================================================================================================
+=========================================================================================================================
+=========================================================================================================================
